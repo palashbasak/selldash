@@ -37,6 +37,10 @@
 </head>
 <body>
 
+	<!-- preloader -->
+	<div id="preloader"></div>
+	
+
 	<!-- dashboard container -->
 	<div id="dashboard-holder">
 	
@@ -58,6 +62,53 @@
 						</button>
 					</li>
 				</ul>
+				
+				
+				<!-- live search field for desktops -->
+				<ul class="nav navbar-nav top_live_search">
+					<li>
+						<form>
+							
+							<label class="tp-search" for="t_search">
+								<input type="search" name="t-search" id="t_search" class="form-control" placeholder="Start typing or scanning...">
+							</label>
+							
+							<div class="search-results">
+								<div class="se-result-row first">
+									<strong>Products</strong>
+									<ul>
+										<li class="clearfix">
+											<div class="pull-left">
+												<strong>Freshly Squeezed Juice</strong>
+												<span>2 Varients</span>
+											</div>
+											<div class="pull-right">
+												<b>$5.10</b>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="pull-left">
+												<strong>Chocolate Brownie</strong>
+												<span>10013</span>
+											</div>
+											<div class="pull-right">
+												<b>$4.50</b>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="se-result-row">
+									<strong>Customers</strong>
+									<ul>
+										<li class="clearfix">No result found</li>
+									</ul>
+								</div>
+							</div>
+							
+						</form>
+					</li>
+				</ul><!-- ./ live search field for desktops -->
+				
 				
 				<!-- nav links -->
 				<ul class="nav navbar-nav navbar-right">
@@ -159,24 +210,6 @@
 					
 					<div class="col-md-7">
 					
-						<!-- categories -->
-						<div class="item-cats">
-							<strong class="item-cats-head">Product categories</strong>
-							
-							<!-- cats list -->
-							<ul class="item-cats-list owl-carousel">
-								<li><button> <img src="http://placehold.it/96x96/" alt=""> Cofee</button></li>
-								<li><button> <img src="http://placehold.it/96x96/" alt=""> Burger</button></li>
-								<li><button> <img src="http://placehold.it/96x96/" alt=""> Pizza</button></li>
-								<li><button> <img src="http://placehold.it/96x96/" alt=""> Samosa</button></li>
-								<li><button> <img src="http://placehold.it/96x96/" alt=""> Tarka</button></li>
-								<li><button> <img src="http://placehold.it/96x96/" alt=""> Dall</button></li>
-								<li><button> <img src="http://placehold.it/96x96/" alt=""> Chicken</button></li>
-								<li><button> <img src="http://placehold.it/96x96/" alt=""> Matan</button></li>
-							</ul>
-						</div><!-- ./ categories -->
-						
-					
 						<!-- live search -->
 						<div class="live-search">
 							<label for="searchprod" class="show">
@@ -216,6 +249,24 @@
 								</div>
 							</div>
 						</div><!-- ./ live search -->
+					
+					
+						<!-- categories -->
+						<div class="item-cats">
+							<strong class="item-cats-head">Product categories</strong>
+							
+							<!-- cats list -->
+							<ul class="item-cats-list owl-carousel">
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Cofee</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Burger without cheess</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Pizza</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Samosa</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Tarka</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Dall</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Chicken</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Matan</button></li>
+							</ul>
+						</div><!-- ./ categories -->
 						
 						
 						<!-- prod categories -->
@@ -951,7 +1002,7 @@
 	
 	
 	<!-- scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/dashboard.js"></script>
