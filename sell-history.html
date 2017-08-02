@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+	
+	<!-- metas -->
+	<meta charset="urtf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, initial-scale=1.0">
+	
+	<!-- document title -->
+	<title>Awesomebite Dashboard</title>
+	
+	<!-- favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<!-- data table -->
+	<link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+	
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	
+	<!-- animations -->
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<!-- owl carouesl -->
+	<link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.min.css">
+	
+	<!-- font icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+	<!-- custom css -->
+	<link rel="stylesheet" href="css/dashboard.css">
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+
+	<!-- dashboard container -->
+	<div id="dashboard-holder">
+	
+		<!-- top nav -->
+		<nav class="navbar navbar-default topnav">
+			<div class="container-fluid">
+				
+				<!-- logo or brand -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Awesomebite</a>
+				</div>
+				
+				<!-- menu toggle -->
+				<ul class="nav navbar-nav main-nav-toggler">
+					<li>
+						<button>
+							<i class="fa fa-bars"></i>
+							<span>Menu</span>
+						</button>
+					</li>
+				</ul>
+				
+				<!-- nav links -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Help</a></li>
+					<li><a href="#"><i class="fa fa-bell"></i></a></li>
+					<li><a href="#">Gurjit Singh</a></li>
+				</ul>
+				
+			</div>
+		</nav><!-- ./ top nav -->
+		
+		
+		<!-- sidenav -->
+		<div class="side-nav animated slideInLeft">
+			<ul>
+				<li class="c-red">
+					<a href="index.html">
+						<i class="fa fa-home"></i>
+						<span>Home</span>
+					</a>
+				</li>
+				<li class="c-green active has-sub sell-sub-nav">
+					<a href="sell.html">
+						<i class="fa fa-calculator"></i>
+						<span>Sell</span>
+					</a>
+				</li>
+			</ul>
+		</div><!-- ./ sidenav -->
+		
+		
+		<!-- mobile nav -->
+		<div class="mobile-nav animated">
+			<span class="close"><i class="fa fa-times-circle"></i></span>
+			<ul>
+				<li class="c-red">
+					<a href="index.html">
+						<i class="fa fa-home"></i>
+						<span>Home</span>
+					</a>
+				</li>
+				<li class="c-green active has-sub">
+					<a href="sell.html">
+						<i class="fa fa-calculator"></i>
+						<span>Sell</span>
+					</a>
+					
+					<ul>
+						<li>
+							<a href="sell.html">Sell</a>
+						</li>
+						<li class="active">
+							<a href="sell-history.html">Sell History</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- ./ mobile nav -->
+		
+		
+		<!-- sub navs -->
+		<div class="sub-navs animated slideInLeft">
+			
+			<!-- sells -->
+			<ul class="sell-sub-nav">
+				<li>
+					<a href="sell.html">Sell</a>
+				</li>
+				<li class="active">
+					<a href="sell-history.html">Sell History</a>
+				</li>
+			</ul>
+			
+		</div><!-- ./ sub navs -->
+		
+		
+		<!-- dasboard -->
+		<div class="dasboard">
+			<div class="container">
+				
+				<div class="das-page">
+				
+					<div class="page-header">
+						<h1>Sales History</h1>
+					</div>
+					
+					
+					<!-- records container -->
+					<div class="records-tab">
+					
+						<!-- tabs -->
+						<ul class="nav nav-pills">
+							<li class="active"><a data-toggle="pill" href="#record1">Continue sales</a></li>
+							<li><a data-toggle="pill" href="#record2">All sales</a></li>
+						</ul>
+						
+						
+						<!-- tab contents -->
+						<div class="tab-content">
+							<div id="record1 class="tab-pane fade in active">
+								
+								
+								<!-- records of parked sale -->
+								<table class="display parkedsales" cellspacing="0" width="100%">
+									<thead>
+										<tr>
+											<th>Date</th>
+											<th>Receipt</th>
+											<th>Sold by</th>
+											<th>Customer</th>
+											<th>Note</th>
+											<th>Sale Total</th>
+											<th>&nbsp;</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>28 Jul 2017 6:01am </td>
+											<td>1</td>
+											<td>Gurjit Singh<span>Mail Outlet</span></td>
+											<td>Palash Basak</td>
+											<td>-</td>
+											<td>$7.00</td>
+											<td><a href="sell.html"><i class="fa fa-share"></i></a></td>
+										</tr>
+										
+									</tbody>
+								</table>
+								
+								
+								
+							</div>
+							<div id="record2" class="tab-pane fade">
+								
+								<!-- records of complete sale -->
+								
+							</div>
+						</div><!-- ./ tab contents -->
+						
+						
+					</div><!-- ./ records container -->
+				
+				
+				</div>
+			</div>
+		</div><!-- ./ dasboard -->
+		
+		
+	</div><!-- ./ dashboard container -->
+	
+	
+	<!-- scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/dashboard.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.parkedsales').DataTable();
+		});
+	</script>
+</body>
+</html>

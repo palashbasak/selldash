@@ -1,0 +1,4 @@
+Changes Made on
+---------------------------------
+sell.html = line 168 - 175 (Placeholder Image added)
+dashboard.css = line 1707 (Padding addedd) , line 1712-1717 (style for category carousel images)

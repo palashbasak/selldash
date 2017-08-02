@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="en">
+<head>
+	
+	<!-- metas -->
+	<meta charset="urtf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, initial-scale=1.0">
+	
+	<!-- document title -->
+	<title>Awesomebite Dashboard</title>
+	
+	<!-- favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	
+	<!-- animations -->
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<!-- owl carouesl -->
+	<link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.min.css">
+	
+	<!-- font icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+	<!-- custom css -->
+	<link rel="stylesheet" href="css/dashboard.css">
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+
+	<!-- dashboard container -->
+	<div id="dashboard-holder">
+	
+		<!-- top nav -->
+		<nav class="navbar navbar-default topnav">
+			<div class="container-fluid">
+				
+				<!-- logo or brand -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Awesomebite</a>
+				</div>
+				
+				<!-- menu toggle -->
+				<ul class="nav navbar-nav main-nav-toggler">
+					<li>
+						<button>
+							<i class="fa fa-bars"></i>
+							<span>Menu</span>
+						</button>
+					</li>
+				</ul>
+				
+				<!-- nav links -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Help</a></li>
+					<li><a href="#"><i class="fa fa-bell"></i></a></li>
+					<li><a href="#">Gurjit Singh</a></li>
+				</ul>
+				
+			</div>
+		</nav><!-- ./ top nav -->
+		
+		
+		<!-- sidenav -->
+		<div class="side-nav animated slideInLeft">
+			<ul>
+				<li class="c-red">
+					<a href="index.html">
+						<i class="fa fa-home"></i>
+						<span>Home</span>
+					</a>
+				</li>
+				<li class="c-green active has-sub sell-sub-nav">
+					<a href="sell.html">
+						<i class="fa fa-calculator"></i>
+						<span>Sell</span>
+					</a>
+				</li>
+			</ul>
+		</div><!-- ./ sidenav -->
+		
+		
+		<!-- mobile nav -->
+		<div class="mobile-nav animated">
+			<span class="close"><i class="fa fa-times-circle"></i></span>
+			<ul>
+				<li class="c-red">
+					<a href="index.html">
+						<i class="fa fa-home"></i>
+						<span>Home</span>
+					</a>
+				</li>
+				<li class="c-green active has-sub">
+					<a href="sell.html">
+						<i class="fa fa-calculator"></i>
+						<span>Sell</span>
+					</a>
+					
+					<ul>
+						<li class="active">
+							<a href="sell.html">Sell</a>
+						</li>
+						<li>
+							<a href="sell-history.html">Sell History</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- ./ mobile nav -->
+		
+		
+		<!-- sub navs -->
+		<div class="sub-navs animated slideInLeft">
+			
+			<!-- sells -->
+			<ul class="sell-sub-nav">
+				<li class="active">
+					<a href="sell.html">Sell</a>
+				</li>
+				<li>
+					<a href="sell-history.html">Sell History</a>
+				</li>
+			</ul>
+			
+		</div><!-- ./ sub navs -->
+		
+		
+		<!-- dasboard -->
+		<div class="dasboard">
+			<div class="container">
+				<div class="row">
+					
+					<!-- dashboard header -->
+					<div class="dashsection-header clearfix">
+						<div class="pull-right">
+							<a href="#" class="inactive" data-toggle="modal" data-target="#parksale">
+								<i class="fa fa-repeat"></i>
+								<span>Park Sale</span>
+							</a>
+							<a href="javascript:void(0)" class="discard_sale inactive">
+								<i class="fa fa-trash"></i>
+								<span>Discard Sale</span>
+							</a>
+						</div>
+					</div>
+					
+				</div>
+			
+				<div class="row">
+					
+					<div class="col-md-7">
+					
+						<!-- categories -->
+						<div class="item-cats">
+							<strong class="item-cats-head">Product categories</strong>
+							
+							<!-- cats list -->
+							<ul class="item-cats-list owl-carousel">
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Cofee</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Burger</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Pizza</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Samosa</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Tarka</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Dall</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Chicken</button></li>
+								<li><button> <img src="http://placehold.it/96x96/" alt=""> Matan</button></li>
+							</ul>
+						</div><!-- ./ categories -->
+						
+					
+						<!-- live search -->
+						<div class="live-search">
+							<label for="searchprod" class="show">
+								<span>Search for products and customers</span>
+								<input type="text" name="searchprod" id="searchprod" class="form-control" placeholder="Start typing or scanning...">
+							</label>
+							
+							<div class="search-results">
+								<div class="se-result-row first">
+									<strong>Products</strong>
+									<ul>
+										<li class="clearfix">
+											<div class="pull-left">
+												<strong>Freshly Squeezed Juice</strong>
+												<span>2 Varients</span>
+											</div>
+											<div class="pull-right">
+												<b>$5.10</b>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="pull-left">
+												<strong>Chocolate Brownie</strong>
+												<span>10013</span>
+											</div>
+											<div class="pull-right">
+												<b>$4.50</b>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="se-result-row">
+									<strong>Customers</strong>
+									<ul>
+										<li class="clearfix">No result found</li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- ./ live search -->
+						
+						
+						<!-- prod categories -->
+						<div class="prod-cates">
+							<ul>
+								<li class="singlePopAc">
+									<span class="span-head" style="background-color:#A059B5;"></span>
+									<span class="span-body" style="background-color:#A059B5;"></span>
+									<a href="#">Freshly Squeezed Juice</a>
+								</li>
+								<li class="multiPopAc">
+									<span class="span-head" style="background-color:#44B773;"></span>
+									<span class="span-body" style="background-color:#44B773;"></span>
+									<a href="#">Chocolate Brownie</a>
+								</li>
+								<li class="singlePopAc">
+									<span class="span-head" style="background-color:#F3C276;"></span>
+									<span class="span-body" style="background-color:#F3C276;"></span>
+									<a href="#">Grilled Panini</a>
+								</li>
+								<li class="multiPopAc">
+									<span class="span-head" style="background-color:#F5765F;"></span>
+									<span class="span-body" style="background-color:#F5765F;"></span>
+									<a href="#">Flat White Coffee</a>
+								</li>
+								<li class="singlePopAc">
+									<span class="span-head" style="background-color:#A059B5;"></span>
+									<span class="span-body" style="background-color:#A059B5;"></span>
+									<a href="#">Freshly Squeezed Juice</a>
+								</li>
+								<li class="multiPopAc">
+									<span class="span-head" style="background-color:#44B773;"></span>
+									<span class="span-body" style="background-color:#44B773;"></span>
+									<a href="#">Chocolate Brownie</a>
+								</li>
+								<li class="singlePopAc">
+									<span class="span-head" style="background-color:#F3C276;"></span>
+									<span class="span-body" style="background-color:#F3C276;"></span>
+									<a href="#">Grilled Panini</a>
+								</li>
+								<li class="multiPopAc">
+									<span class="span-head" style="background-color:#F5765F;"></span>
+									<span class="span-body" style="background-color:#F5765F;"></span>
+									<a href="#">Flat White Coffee</a>
+								</li>
+								<li class="singlePopAc">
+									<span class="span-head" style="background-color:#A059B5;"></span>
+									<span class="span-body" style="background-color:#A059B5;"></span>
+									<a href="#">Freshly Squeezed Juice</a>
+								</li>
+								<li class="multiPopAc">
+									<span class="span-head" style="background-color:#44B773;"></span>
+									<span class="span-body" style="background-color:#44B773;"></span>
+									<a href="#">Chocolate Brownie</a>
+								</li>
+								<li class="singlePopAc">
+									<span class="span-head" style="background-color:#F3C276;"></span>
+									<span class="span-body" style="background-color:#F3C276;"></span>
+									<a href="#">Grilled Panini</a>
+								</li>
+								<li class="multiPopAc">
+									<span class="span-head" style="background-color:#F5765F;"></span>
+									<span class="span-body" style="background-color:#F5765F;"></span>
+									<a href="#">Flat White Coffee</a>
+								</li>
+								<li class="singlePopAc">
+									<span class="span-head" style="background-color:#A059B5;"></span>
+									<span class="span-body" style="background-color:#A059B5;"></span>
+									<a href="#">Freshly Squeezed Juice</a>
+								</li>
+								<li class="multiPopAc">
+									<span class="span-head" style="background-color:#44B773;"></span>
+									<span class="span-body" style="background-color:#44B773;"></span>
+									<a href="#">Chocolate Brownie</a>
+								</li>
+								<li class="singlePopAc">
+									<span class="span-head" style="background-color:#F3C276;"></span>
+									<span class="span-body" style="background-color:#F3C276;"></span>
+									<a href="#">Grilled Panini</a>
+								</li>
+								<li class="multiPopAc">
+									<span class="span-head" style="background-color:#F5765F;"></span>
+									<span class="span-body" style="background-color:#F5765F;"></span>
+									<a href="#">Flat White Coffee</a>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+					
+					<div class="col-md-5">
+					
+						<!-- sell drawer -->
+						<div class="sell-drawer">
+						
+							<!-- header -->
+							<div class="drawer-header">
+								<i class="fa fa-user"></i><a href="#" data-toggle="modal" data-target="#addcust">Create new customer</a>
+							</div>
+							
+							<!-- body -->
+							<div class="drawer-body">
+							
+								<!-- items -->
+								<ul class="added-items">
+									
+									<!-- single item -->
+									<li class="clearfix">
+										<div class="visiable-item-info">
+											<div class="items-info pull-left">
+												<div class="item-quantity">
+													<input type="text" name="iqty" value="1">
+												</div>
+												<div class="item-name">
+													<strong>Grilled Panini</strong>
+													<span>Wholemeal</span>
+												</div>
+											</div>
+											<div class="price-info pull-right text-right">
+												<span>3.40</span>
+												<a href="javascript:void(0);" class="rem_item"><i class="fa fa-trash"></i></a>
+											</div>
+										</div>
+									</li> <!-- ./ single item -->
+									
+									
+								</ul><!-- ./ items -->
+								
+								
+								<!-- sell calculation -->
+								<div class="drawer-calc">
+									<textarea name="sale_note" id="sale_note" placeholder="Add sale note"></textarea>
+									<hr>
+									<ul class="calcs-list">
+										<li>
+											<div class="pull-left">
+												
+												<a href="#" class="discount" data-toggle="popover" data-placement="right" title="Apply discount to sale">Discount</a>
+												
+												<!-- discount options -->
+												<div class="discount_options hidden">
+													
+													<ul class="nav nav-pills">
+														<li class="active"><a data-toggle="pill" href="#mt1">%</a></li>
+														<li><a data-toggle="pill" href="#mt2">$</a></li>
+													</ul>
+													
+													<div class="tab-content">
+														<div id="mt1" class="tab-pane fade in active clearfix">
+															<input type="text" value="0">
+															<a href="#" class="clear-dis"><i class="fa fa-trash"></i></a>
+														</div>
+														
+														<div id="mt2" class="tab-pane fade clearfix">
+															<input type="text" value="0.00">
+															<a href="#" class="clear-dis"><i class="fa fa-trash"></i></a>
+														</div>
+													</div>
+													
+												</div><!-- ./ discount options -->
+												
+											</div>
+											<div class="pull-right text-right"><span>$0.00</span></div>
+											<div class="clearfix"></div>
+										</li>
+										<li>
+											<div class="pull-left"><span>Sub total</span></div>
+											<div class="pull-right text-right"><span>$0.00</span></div>
+											<div class="clearfix"></div>
+										</li>
+										<li>
+											<div class="pull-left">
+												<a href="#" class="gstoptions" data-toggle="popover" data-placement="right" title="Remove tax from sale">Tax (GST)</a>
+												
+												<!-- gst options -->
+												<div class="gst-options hidden">
+													<div class="gst-body">
+														<input type="text" value="GST (10%)	$18,182.73" disabled name="gstval">
+														<a href="javascript:void(0);" id="clearGst" class="clear-dis"><i class="fa fa-trash"></i></a>
+													</div>
+												</div>
+												
+											</div>
+											<div class="pull-right text-right"><span>$0.00</span></div>
+											<div class="clearfix"></div>
+										</li>
+									</ul>
+									<hr>
+									
+									<!-- total -->
+									<div class="total">
+										<div class="pull-left"><span>Total <b>(5 items)</b></span></div>
+										<div class="pull-right text-right"><span>$200,010.00</span></div>
+										<div class="clearfix"></div>
+									</div>
+									
+								</div><!-- ./ sell calculation -->
+							</div>
+							
+							<!-- footer -->
+							<div class="drawer-footer">
+								<button class="clearfix payNow" disabled>
+									<div class="pull-left"><strong>Pay</strong></div>
+									<div class="pull-right text-right"><strong class="grand_total">$0.00</strong></div>
+								</button>
+							</div>
+							
+						</div><!-- ./ sell drawer -->
+						
+					</div>
+				
+				</div>
+			</div>
+		</div><!-- ./ dasboard -->
+		
+		
+		<!-- pay screen -->
+		<div class="pay-screen">
+			<div class="container">
+				<div class="row">
+				
+					<!-- recipet -->
+					<div class="recipet">
+						<div class="receipt-header">
+							Sale Summary
+						</div>
+						<div class="receipt-body">
+							<span class="receipt-count">1 item(s)</span>
+							<hr>
+							<ul class="receipt-list">
+								<li class="clearfix">
+									<div class="pull-left">
+										<div class="qty">1</div>
+										<div class="i-info">
+											<strong>Grilled Panini</strong>
+											<span>Wholemeal</span>
+										</div>
+									</div>
+									<div class="pull-right">
+										<span class="it-price">3.00</span>
+									</div>
+								<li>
+							</ul>
+							<hr>
+							<ul class="receipt-calc">
+								<li class="clearfix">
+									<span>Sub-total</span>
+									<span class="pull-right">$5.91</span>
+								</li>
+								<li class="clearfix">
+									<span>Total Tax (GST)</span>
+									<span class="pull-right">$0.59</span>
+								</li>
+							</ul>
+							<ul class="receipt-totals">
+								<li class="clearfix total">
+									<span>Total</span>
+									<span class="pull-right">$6.50</span>
+								</li>
+								<li class="clearfix">
+									<strong>Balance</strong>
+									<strong class="pull-right">$6.50</strong>
+								</li>
+							</ul>
+						</div>
+					</div><!-- ./ recipet -->
+					
+					
+					<!-- pay options -->
+					<div class="pay-options">
+					
+						<!-- processing -->
+						<div class="under-process">
+							<a href="javascript:void(0);" class="pull-right back-drawer anch-button">
+								<i class="fa fa-arrow-left"></i>
+								Back to Sale
+							</a>
+							
+							<div class="pay-options-header clearfix">
+								<h2>Pay</h2>
+								<input type="text" name="pay_return" value="6.50">
+							</div>
+							
+							<div class="pay-actions">
+								<a href="javascript:void(0);" class="btn btn-default btn-lg cashPay">Cash</a>
+								<a href="javascript:void(0);" class="btn btn-default btn-lg cardPay">Credit Card</a>
+							</div>
+						</div>
+						
+						<!-- order complete -->
+						<div class="order-complete">
+							<div class="order_comp_header">
+								<i class="fa fa-check-circle-o"></i>
+								Payment complete!
+							</div>
+							<hr>
+							<div class="comp_actions">
+								<a href="javascript:void(0);" class="anch-button">
+									<i class="fa fa-print"></i>
+									Print Receipt
+								</a>
+							</div>
+							<div class="comp_form">
+								<form>
+									<input type="tel" name="text" placeholder="Enter phone number" class="phone_num">
+									<input type="submit" name="send_receipt" class="btn btn-primary inactive" disabled value="SMS Receipt">
+								</form>
+							</div>
+							
+							<a href="javascript:void(0);" class="btn btn-default btn-lg btn-block markDone">Done</a>
+						</div>
+						
+					</div><!-- ./ pay options -->
+				
+				</div>
+			</div>
+		</div>
+		<!-- ./ pay screen -->
+		
+	</div><!-- ./ dashboard container -->
+	
+	
+	
+	<!-- multiple item selection popup -->
+	<div class="popup multiPop">
+		<div class="popup-content">
+		
+			<!-- popup header -->
+			<div class="popup-header">
+				<b class="pop-close">&times;</b>
+			
+				<span>Customize your order</span>
+				
+				<div class="popactions">
+					<div class="chkbox">
+						<input type="checkbox" name="accept" id="accept">
+					</div>
+					<button class="acname">
+						Accept
+					</button>
+					<div class="clearfix"></div>
+				</div>
+				
+			</div>
+			
+			<!-- popup body -->
+			<div class="popup-body">
+				
+				<!-- items carousel -->
+				<div class="carousel-card">
+					
+					<!-- carousel header -->
+					<div class="carousel-header">
+						<div class="carousel-name">
+							<span>Make Some Choice</span>
+						</div>
+						<div class="carousel-navigation">
+							<i class="prev">&lt;</i>
+							<i class="next">&gt;</i>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+					
+					<!-- carousel body -->
+					<div class="carousel-body owl-carousel">
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/1.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Riesling</span>
+								<span class="item_price">+<i>$160.12</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/2.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Syrah</span>
+								<span class="item_price">+<i>$320</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/3.jpg" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Merlot</span>
+								<span class="item_price">+<i>$480</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/4.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Cabernet</span>
+								<span class="item_price">+<i>$215.5</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/5.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Pinot</span>
+								<span class="item_price">+<i>$246.5</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/6.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Agrafe</span>
+								<span class="item_price">+<i>$147</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/7.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Anjou</span>
+								<span class="item_price">+<i>$7895.15</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/8.jpg" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Assemblage</span>
+								<span class="item_price">+<i>$485.16</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/9.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Ausone</span>
+								<span class="item_price">+<i>$3800</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/10.ico" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Bacchus</span>
+								<span class="item_price">+<i>$170</i></span>
+							</div>
+						</div>
+						
+					</div><!-- ./ carousel body -->
+					
+				</div><!-- ./ items carousel -->
+				
+			</div><!-- ./ popup body -->
+			
+		</div>
+	</div><!-- ./ multiple item selection popup -->
+	
+	
+	<!-- single item selection popup -->
+	<div class="popup singlePop">
+		<div class="popup-content">
+		
+			<!-- popup header -->
+			<div class="popup-header">
+				<b class="pop-close">&times;</b>
+			
+				<span>Customize your order</span>
+				
+				<div class="popactions">
+					<div class="chkbox">
+						<input type="checkbox" name="accept" id="accept">
+					</div>
+					<button class="acname">
+						Accept
+					</button>
+					<div class="clearfix"></div>
+				</div>
+				
+			</div>
+			
+			<!-- popup body -->
+			<div class="popup-body">
+				
+				<!-- items carousel -->
+				<div class="carousel-card">
+					
+					<!-- carousel header -->
+					<div class="carousel-header">
+						<div class="carousel-name">
+							<span>Make Some Choice</span>
+						</div>
+						<div class="carousel-navigation">
+							<i class="prev">&lt;</i>
+							<i class="next">&gt;</i>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+					
+					<!-- carousel body -->
+					<div class="carousel-body owl-carousel">
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/1.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Riesling</span>
+								<span class="item_price">+<i>$160.12</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/2.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Syrah</span>
+								<span class="item_price">+<i>$320</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/3.jpg" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Merlot</span>
+								<span class="item_price">+<i>$480</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/4.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Cabernet</span>
+								<span class="item_price">+<i>$215.5</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/5.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Pinot</span>
+								<span class="item_price">+<i>$246.5</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/6.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Agrafe</span>
+								<span class="item_price">+<i>$147</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/7.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Anjou</span>
+								<span class="item_price">+<i>$7895.15</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/8.jpg" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Assemblage</span>
+								<span class="item_price">+<i>$485.16</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/9.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Ausone</span>
+								<span class="item_price">+<i>$3800</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/10.ico" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Bacchus</span>
+								<span class="item_price">+<i>$170</i></span>
+							</div>
+						</div>
+						
+					</div><!-- ./ carousel body -->
+					
+				</div><!-- ./ items carousel -->
+				
+			</div><!-- ./ popup body -->
+			
+		</div>
+	</div><!-- ./ single item selection popup -->
+	
+	
+	<!-- park sale modal -->
+	<div id="parksale" class="modal fade" role="dialog" tabindex='-1'>
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<h4 class="modal-title">Add a note to the sale</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				
+				<div class="modal-body">
+					<p>You are about to park this sale. Add a note so it can be identified by the next person who continues this sale.</p>
+					<textarea></textarea>
+					<span class="note">Notes can be used to identify a sale in the future, and can contain information that can help complete the sale.</span>
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default">Park Sale</button>
+				</div>
+				
+			</div>
+		</div>
+	</div><!-- ./ park sale modal -->
+	
+	
+	<!-- add customer -->
+	<div id="addcust" class="modal fade" role="dialog" tabindex='-1'>
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<h4 class="modal-title">Create new customer</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				
+				<div class="modal-body">
+					<form>
+						<div class="dual-input clearfix">
+							<label for="fname">
+								<span>First name</span>
+								<input type="text" name="fname" id="fname" placeholder="Enter first name">
+							</label>
+							<label for="lname">
+								<span>Last name</span>
+								<input type="text" name="lname" id="lname" placeholder="Enter lirst name">
+							</label>
+						</div>
+						<label for="address">
+							<span>Address line</span>
+							<input type="text" name="address" id="address" placeholder="Enter your street address">
+						</label>
+						<div class="dual-input clearfix">
+							<label for="phone_num">
+								<span>Phone number</span>
+								<input type="text" name="phone_num" id="phone_num" placeholder="Enter phone number">
+							</label>
+							<div class="dual-input clearfix">
+								<label for="city">
+									<span>City</span>
+									<input type="text" name="city" id="city" placeholder="Enter your city name">
+								</label>
+								<label for="state">
+									<span>State</span>
+									<input type="text" name="state" id="state" placeholder="Enter your state name">
+								</label>
+							</div>
+						</div>
+						<label for="suburb">
+							<span>Suburb</span>
+							<input type="text" name="suburb" id="suburb" placeholder="Suburb">
+						</label>
+					</form>
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default">Create new customer</button>
+				</div>
+				
+			</div>
+		</div>
+	</div><!-- ./ add customer -->
+	
+	
+	<!-- scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/dashboard.js"></script>
+	
+</body>
+</html>
