@@ -96,6 +96,33 @@ strong {
 }
 
 
+/* preloader */
+#preloader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 99999999999999999;
+}
+
+#preloader:before {
+	position: absolute;
+	content: "";
+	width: 64px;
+	height: 22px;
+	background: url('../images/loader.gif') no-repeat center center;
+	background-size: cover;
+	left: 50%;
+	top: 50%;
+	margin-left: -32px;
+	margin-top: -11px;
+}
+
+
 /* dashboard seting */
 #dashboard-holder {
 	position: relative;
@@ -105,6 +132,7 @@ strong {
 	background-color: #f5f5f5;
 	float: left;
 }
+
 #dashboard-holder .dasboard .container,
 #dashboard-holder .pay-screen .container {
 	width: 100%;
@@ -126,6 +154,7 @@ strong {
 	border: none;
     border-radius: 0;
 	margin-bottom: 0;
+    padding: 3px 0;	
 }
 
 .topnav a {
@@ -413,6 +442,7 @@ strong {
 .live-search {
 	position: relative;
 	margin-bottom: 20px;
+	display: none;
 }
 
 .live-search label {
@@ -443,7 +473,8 @@ strong {
     color: #ddd;
 }
 
-.live-search .search-results {
+.live-search .search-results,
+.top_live_search .search-results {
 	position: absolute;
     background: #fff;
     width: 100%;
@@ -452,7 +483,8 @@ strong {
 	display: none;
 }
 
-.live-search .search-results .se-result-row strong {
+.live-search .search-results .se-result-row strong,
+.top_live_search .search-results .se-result-row strong {
 	background: #ebebeb;
     display: block;
     font-size: 12px;
@@ -461,16 +493,19 @@ strong {
     padding: 5px 10px;
 }
 
-.live-search .search-results .se-result-row.first strong {
+.live-search .search-results .se-result-row.first strong,
+.top_live_search .search-results .se-result-row.first strong {
 	border-radius: 5px 5px 0 0;
 }
 
-.live-search .search-results .se-result-row li {
+.live-search .search-results .se-result-row li,
+.top_live_search .search-results .se-result-row li {
     line-height: 22px;
 	padding: 5px 10px;
 }
 
-.live-search .search-results .se-result-row li strong {
+.live-search .search-results .se-result-row li strong,
+.top_live_search .search-results .se-result-row li strong {
     background: #fff;
     font-size: 15px;
     text-transform: capitalize;
@@ -481,7 +516,8 @@ strong {
     display: inline;
 }
 
-.live-search .search-results .se-result-row li span {
+.live-search .search-results .se-result-row li span,
+.top_live_search .search-results .se-result-row li span {
     font-size: 12px;
     font-weight: 500;
     text-transform: lowercase;
@@ -490,9 +526,61 @@ strong {
     line-height: 15px;
 }
 
-.live-search .search-results .se-result-row li b {
+.live-search .search-results .se-result-row li b,
+.top_live_search .search-results .se-result-row li b {
 	font-weight: 400;
 }
+
+/* top live search bar */
+.top_live_search {
+	min-width: 600px;
+	margin-left: 100px;
+}
+
+.top_live_search li {
+	float: none;
+}
+
+.top_live_search  .tp-search {
+	margin-bottom: 0;
+	position: relative;
+}
+
+.top_live_search  .tp-search:before {
+	content: "\f002";
+    font-family: 'FontAwesome';
+    font-size: 18px;
+    position: absolute;
+    left: 13px;
+    top: 5px;
+    color: #ddd;
+}
+
+.top_live_search .tp-search input {
+	height: 40px;
+    border-radius: 2px;
+    margin-top: 5px;
+	padding-left: 45px;
+    font-size: 16px;
+	outline: none !important;
+	border: none;
+}
+
+.top_live_search .tp-search input:focus {
+	outline: none !important;
+	outline-color: transparent;
+	box-shadow: none;
+}
+
+.top_live_search .search-results {
+	border-radius: 2px;
+    margin-top: 3px;
+}
+
+.top_live_search .search-results .se-result-row.first strong {
+    border-radius: 2px 2px 0 0;
+}
+
 
 /* products category */
 .prod-cates ul li {
@@ -1410,11 +1498,13 @@ form  label input {
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     
+	/*
 	-webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     
 	animation-name: animatetop;
     animation-duration: 0.4s
+	*/
 }
 
 /* popup header */
@@ -1506,7 +1596,7 @@ form  label input {
 	background: #e8e6e6;
 }
 
-/* pop slidein animation */
+/* pop slidein animation 
 @-webkit-keyframes animatetop {
     from {top: -300px; opacity: 0} 
     to {top: 0; opacity: 1}
@@ -1516,7 +1606,7 @@ form  label input {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
 }
-
+*/
 
 /* carousel */
 .carousel-card {
@@ -1653,7 +1743,7 @@ form  label input {
 /* cats carousel  */
 .item-cats {
     margin-bottom: 37px;
-    margin-top: -30px;	
+	margin-top: -30px;
 }
 
 .item-cats .item-cats-head {
@@ -1676,7 +1766,7 @@ form  label input {
 .item-cats .item-cats-list .owl-prev,
 .item-cats .item-cats-list .owl-next {
     display: inline-block;
-    width: 82px;
+    width: 100px;
     text-align: center;
     background: #ff5c0e;
     color: #fff;
@@ -1707,6 +1797,9 @@ form  label input {
 	padding-top: 10px;
     border-radius: 5px;
     background: #ebebeb;
+    font-size: 12px;
+    word-wrap: break-word;
+	line-height: 16px;
 }
 
 .item-cats .item-cats-list li button img {
@@ -1714,14 +1807,22 @@ form  label input {
 	max-width: 45px;
 	max-height: 45px;
 	border-radius: 5px;
+    margin-bottom: 5px;	
 }
-
 
 .item-cats .item-cats-list li button:hover {
     background: #ff5c0e;
 	color: #fff;
 }
 
+.item-cats .item-cats-list li button:focus,
+.item-cats .item-cats-list li button.active {
+	outline-color: #ff5c0e;
+}
+
+.item-cats .owl-carousel .owl-stage-outer {
+    padding: 10px 0;	
+}
 
 
 /* ================================
@@ -1819,6 +1920,10 @@ form  label input {
 		width: 90%;
 		margin: 0 auto;
 	}
+	
+	.top_live_search {
+		margin-left: 20px;
+	}
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1874,6 +1979,16 @@ form  label input {
 	
 	.item-cats {
 		margin-top: 0px;
+	}
+	
+	.top_live_search {
+		min-width: 500px;
+	}
+}
+
+@media only screen and (max-width: 868px) {
+	.top_live_search {
+		min-width: 400px;
 	}
 }
 
@@ -1955,6 +2070,18 @@ form  label input {
 	
 	.tab-content tbody tr td span {
 		font-size: 10px;
+	}
+	
+	.top_live_search {
+		display: none
+	}
+	
+	.live-search {
+		display: block;
+	}
+	
+	.topnav {
+	    padding: 0;	
 	}
 }
 

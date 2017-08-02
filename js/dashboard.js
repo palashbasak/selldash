@@ -1,6 +1,15 @@
 (function ($) {
   "use strict";
 	
+	// preloader
+	$(window).on('load', function() {
+		
+		$('#preloader').fadeOut(1000, function () {
+			$(this).remove();
+		});
+		
+	});
+	
 	// display toggler menu
 	$('.main-nav-toggler button').click(function(){
 		$('.mobile-nav').removeClass('slideOutLeft').addClass('slideInLeft').show();
@@ -11,17 +20,17 @@
 	});
 	
 	// display live search box
-	$(".live-search input").keyup(function(){
-		$(".live-search .search-results").show();
+	$(".live-search input, .top_live_search input").keyup(function(){
+		$(".live-search .search-results, .top_live_search .search-results").show();
 	});
 	
 	// live search
-	$(".live-search input").keyup(function() {
+	$(".live-search input, .top_live_search input").keyup(function() {
        if($(this).val().length > 0) {
-          $(".live-search .search-results").show();
+          $(".live-search .search-results, .top_live_search .search-results").show();
        }
        else {
-          $(".live-search .search-results").hide();
+          $(".live-search .search-results, .top_live_search .search-results").hide();
        }
     });
 	
@@ -172,8 +181,8 @@
 		});
 		
 		$('.prod-cates').css({
-			'max-height': + (viewportHeight-438),
-			'min-height': + (viewportHeight-438),
+			'max-height': + (viewportHeight-365),
+			'min-height': + (viewportHeight-365),
 		});
 	}
 	
@@ -250,12 +259,12 @@
 				nav:false
 			},
 			1000:{
-				items:6,
+				items:5,
 				nav:true,
 				loop:false
 			},
 			1300:{
-				items:7,
+				items:5,
 				nav:true,
 				loop:false
 			}
