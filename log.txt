@@ -2,3 +2,16 @@ Changes Made on
 ---------------------------------
 sell.html = line 168 - 175 (Placeholder Image added)
 dashboard.css = line 1707 (Padding addedd) , line 1712-1717 (style for category carousel images)
+
+
+
+Changes - 8/2/2017
+----------------------------------
+changes made on: 
+
+dashboard.css
+dashboard.js
+sell.html
+index.html
+sell-history.html
+new image [images/loader.gif]
