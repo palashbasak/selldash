@@ -1412,13 +1412,16 @@ form  label input {
 
 /* data table reconstruction */
 .dataTables_length ,
-#DataTables_Table_0_filter {
+#DataTables_Table_0_filter,
+#DataTables_Table_1_filter  {
 	margin-bottom: 20px;
 }
 
 .dataTables_length label,
-#DataTables_Table_0_filter label {
+#DataTables_Table_0_filter label,
+#DataTables_Table_1_filter label {
 	font-weight: 400;
+	font-size: 14px;
 }
 
 .dataTables_length select {
@@ -1427,7 +1430,8 @@ form  label input {
     margin: 0 2px;
 }
 
-#DataTables_Table_0_filter input {
+#DataTables_Table_0_filter input,
+#DataTables_Table_1_filter input {
     border: solid 1px #ebebeb;
     border-radius: 3px;	
 }
@@ -1449,11 +1453,16 @@ form  label input {
 }
 
 .tab-content tbody tr td {
-	line-height: 19px;
+	line-height: 16px;
+	font-size: 14px;
 }
 
 .tab-content tbody tr td a {
 	color: #bab9b9;
+}
+
+.tab-content tbody tr td a:hover i {
+	color: #ff5c0e;
 }
 
 .tab-content tbody tr td span {
@@ -1468,12 +1477,52 @@ form  label input {
 	margin-top: 15px;
 }
 
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	border: none;
+	min-width: 30px;
+	margin: 0 3px;
+	padding: 0;
+	border: none;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next,
+.dataTables_wrapper .dataTables_paginate .paginate_button.prev {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, 
-.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover  {
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover  {
 	padding: 0;
     border: none;
     background: #ff5c0e;
     color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.prev:hover {
+	padding-left: 5px;
+	padding-right: 5px;
+} 
+
+.dataTables_wrapper .dataTables_info {
+	font-size: 12px;
+}
+
+#filterrow th input {
+	padding: 5px;
+    font-size: 12px;
+    height: 30px;
+    border-radius: 3px;
+    border: solid 1px #dddbdb;
+}
+
+#filterrow th:nth-child(2) input,
+#filterrow th:nth-child(5) input,
+#filterrow th:nth-child(6) input,
+#filterrow th:last-child input {
+	display: none;
 }
 
 

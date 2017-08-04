@@ -22,6 +22,9 @@
 	<!-- animations -->
 	<link rel="stylesheet" href="css/animate.css">
 	
+	<!-- jquery css -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	
 	<!-- owl carouesl -->
 	<link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.min.css">
@@ -39,6 +42,10 @@
 	
 </head>
 <body>
+	
+	<!-- preloader -->
+	<div id="preloader"></div>
+
 
 	<!-- dashboard container -->
 	<div id="dashboard-holder">
@@ -160,8 +167,7 @@
 						
 						<!-- tab contents -->
 						<div class="tab-content">
-							<div id="record1 class="tab-pane fade in active">
-								
+							<div id="record1" class="tab-pane fade in active">
 								
 								<!-- records of parked sale -->
 								<table class="display parkedsales" cellspacing="0" width="100%">
@@ -175,18 +181,116 @@
 											<th>Sale Total</th>
 											<th>&nbsp;</th>
 										</tr>
+										<tr id="filterrow">
+											<th>Date</th>
+											<th>Receipt</th>
+											<th>Sold by</th>
+											<th>Customer</th>
+											<th>Note</th>
+											<th>Sale Total</th>
+											<th>&nbsp;</th>
+										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>28 Jul 2017 6:01am </td>
 											<td>1</td>
-											<td>Gurjit Singh<span>Mail Outlet</span></td>
+											<td>Gurjit Singh<span>Main Outlet</span></td>
 											<td>Palash Basak</td>
 											<td>-</td>
 											<td>$7.00</td>
 											<td><a href="sell.html"><i class="fa fa-share"></i></a></td>
 										</tr>
-										
+										<tr>
+											<td>26 Jul 2017 8:09am </td>
+											<td>2</td>
+											<td>Akash Das<span>Main Outlet</span></td>
+											<td>Binoy Duta</td>
+											<td>-</td>
+											<td>$46.00</td>
+											<td><a href="sell.html"><i class="fa fa-share"></i></a></td>
+										</tr>
+										<tr>
+											<td>26 Jul 2017 11:00am </td>
+											<td>3</td>
+											<td>Jonas Alexander<span>Home Delivery</span></td>
+											<td>Olivia Liang</td>
+											<td>-</td>
+											<td>$403.12</td>
+											<td><a href="sell.html"><i class="fa fa-share"></i></a></td>
+										</tr>
+										<tr>
+											<td>26 Jul 2017 01:16pm </td>
+											<td>4</td>
+											<td>Shad Decker<span>Main Outlet</span></td>
+											<td>Vivian Harrell</td>
+											<td>-</td>
+											<td>$49.10</td>
+											<td><a href="sell.html"><i class="fa fa-share"></i></a></td>
+										</tr>
+										<tr>
+											<td>27 Jul 2017 9:00am </td>
+											<td>5</td>
+											<td>Michael Bruce<span>3rd Outlate</span></td>
+											<td>Hope Fuentes</td>
+											<td>-</td>
+											<td>$26.23</td>
+											<td><a href="sell.html"><i class="fa fa-share"></i></a></td>
+										</tr>
+										<tr>
+											<td>27 Jul 2017 12:10pm </td>
+											<td>6</td>
+											<td>Donna Snider<span>Home Delivery</span></td>
+											<td>Gavin Cortez</td>
+											<td>-</td>
+											<td>$113.08</td>
+											<td><a href="sell.html"><i class="fa fa-share"></i></a></td>
+										</tr>
+										<tr>
+											<td>28 Jul 2017 02:25pm </td>
+											<td>7</td>
+											<td>Zenaida Frank<span>Main Outlet</span></td>
+											<td>Prescott Bartlett</td>
+											<td>-</td>
+											<td>$71.80</td>
+											<td><a href="sell.html"><i class="fa fa-share"></i></a></td>
+										</tr>
+										<tr>
+											<td>28 Jul 2017 10:33am </td>
+											<td>8</td>
+											<td>Serge Baldwin<span>Main Outlet</span></td>
+											<td>Fiona Green</td>
+											<td>-</td>
+											<td>$45.00</td>
+											<td><a href="sell.html"><i class="fa fa-share"></i></a></td>
+										</tr>
+										<tr>
+											<td>28 Jul 2017 4:02pm </td>
+											<td>9</td>
+											<td>Thor Walton<span>Online Order</span></td>
+											<td>Shou Itou</td>
+											<td>-</td>
+											<td>$49.00</td>
+											<td><a href="sell.html"><i class="fa fa-share"></i></a></td>
+										</tr>
+										<tr>
+											<td>26 Jul 2017 8:09am </td>
+											<td>10</td>
+											<td>Akash Das<span>Main Outlet</span></td>
+											<td>Binoy Duta</td>
+											<td>-</td>
+											<td>$46.00</td>
+											<td><a href="sell.html"><i class="fa fa-share"></i></a></td>
+										</tr>
+										<tr>
+											<td>26 Jul 2017 11:00am </td>
+											<td>11</td>
+											<td>Jonas Alexander<span>Home Delivery</span></td>
+											<td>Olivia Liang</td>
+											<td>-</td>
+											<td>$403.12</td>
+											<td><a href="sell.html"><i class="fa fa-share"></i></a></td>
+										</tr>
 									</tbody>
 								</table>
 								
@@ -195,7 +299,130 @@
 							</div>
 							<div id="record2" class="tab-pane fade">
 								
-								<!-- records of complete sale -->
+								<!-- records of parked sale -->
+								<table class="display parkedsales" cellspacing="0" width="100%">
+									<thead>
+										<tr>
+											<th>Date</th>
+											<th>Receipt</th>
+											<th>Sold by</th>
+											<th>Customer</th>
+											<th>Note</th>
+											<th>Sale Total</th>
+											<th>&nbsp;</th>
+										</tr>
+										<tr id="filterrow">
+											<th>Date</th>
+											<th>Receipt</th>
+											<th>Sold by</th>
+											<th>Customer</th>
+											<th>Note</th>
+											<th>Sale Total</th>
+											<th>&nbsp;</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>28 Jul 2017 6:01am </td>
+											<td>1</td>
+											<td>Gurjit Singh<span>Main Outlet</span></td>
+											<td>Palash Basak</td>
+											<td>-</td>
+											<td>$7.00</td>
+											<td><a href="sell.html"><i class="fa fa-eye"></i></a></td>
+										</tr>
+										<tr>
+											<td>26 Jul 2017 8:09am </td>
+											<td>2</td>
+											<td>Akash Das<span>Main Outlet</span></td>
+											<td>Binoy Duta</td>
+											<td>-</td>
+											<td>$46.00</td>
+											<td><a href="sell.html"><i class="fa fa-eye"></i></a></td>
+										</tr>
+										<tr>
+											<td>26 Jul 2017 11:00am </td>
+											<td>3</td>
+											<td>Jonas Alexander<span>Home Delivery</span></td>
+											<td>Olivia Liang</td>
+											<td>-</td>
+											<td>$403.12</td>
+											<td><a href="sell.html"><i class="fa fa-eye"></i></a></td>
+										</tr>
+										<tr>
+											<td>26 Jul 2017 01:16pm </td>
+											<td>4</td>
+											<td>Shad Decker<span>Main Outlet</span></td>
+											<td>Vivian Harrell</td>
+											<td>-</td>
+											<td>$49.10</td>
+											<td><a href="sell.html"><i class="fa fa-eye"></i></a></td>
+										</tr>
+										<tr>
+											<td>27 Jul 2017 9:00am </td>
+											<td>5</td>
+											<td>Michael Bruce<span>3rd Outlate</span></td>
+											<td>Hope Fuentes</td>
+											<td>-</td>
+											<td>$26.23</td>
+											<td><a href="sell.html"><i class="fa fa-eye"></i></a></td>
+										</tr>
+										<tr>
+											<td>27 Jul 2017 12:10pm </td>
+											<td>6</td>
+											<td>Donna Snider<span>Home Delivery</span></td>
+											<td>Gavin Cortez</td>
+											<td>-</td>
+											<td>$113.08</td>
+											<td><a href="sell.html"><i class="fa fa-eye"></i></a></td>
+										</tr>
+										<tr>
+											<td>28 Jul 2017 02:25pm </td>
+											<td>7</td>
+											<td>Zenaida Frank<span>Main Outlet</span></td>
+											<td>Prescott Bartlett</td>
+											<td>-</td>
+											<td>$71.80</td>
+											<td><a href="sell.html"><i class="fa fa-eye"></i></a></td>
+										</tr>
+										<tr>
+											<td>28 Jul 2017 10:33am </td>
+											<td>8</td>
+											<td>Serge Baldwin<span>Main Outlet</span></td>
+											<td>Fiona Green</td>
+											<td>-</td>
+											<td>$45.00</td>
+											<td><a href="sell.html"><i class="fa fa-eye"></i></a></td>
+										</tr>
+										<tr>
+											<td>28 Jul 2017 4:02pm </td>
+											<td>9</td>
+											<td>Thor Walton<span>Online Order</span></td>
+											<td>Shou Itou</td>
+											<td>-</td>
+											<td>$49.00</td>
+											<td><a href="sell.html"><i class="fa fa-eye"></i></a></td>
+										</tr>
+										<tr>
+											<td>26 Jul 2017 8:09am </td>
+											<td>10</td>
+											<td>Akash Das<span>Main Outlet</span></td>
+											<td>Binoy Duta</td>
+											<td>-</td>
+											<td>$46.00</td>
+											<td><a href="sell.html"><i class="fa fa-eye"></i></a></td>
+										</tr>
+										<tr>
+											<td>26 Jul 2017 11:00am </td>
+											<td>11</td>
+											<td>Jonas Alexander<span>Home Delivery</span></td>
+											<td>Olivia Liang</td>
+											<td>-</td>
+											<td>$403.12</td>
+											<td><a href="sell.html"><i class="fa fa-eye"></i></a></td>
+										</tr>
+									</tbody>
+								</table>
 								
 							</div>
 						</div><!-- ./ tab contents -->
@@ -215,13 +442,52 @@
 	<!-- scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/dashboard.js"></script>
 	
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.parkedsales').DataTable();
+			
+			$(function(){
+				$(".datepicker").datepicker({ dateFormat: 'dd M yy' });
+			});
+		
+		
+			$('.parkedsales thead tr#filterrow th').each( function () {
+				var title = $('.parkedsales thead th').eq( $(this).index() ).text();
+				
+				if (title === "Date") {
+					$(this).html( '<input type="text" class="datepicker" placeholder="Date" />' );
+				}
+				else {
+					$(this).html( '<input type="text" onclick="stopPropagation(event);" placeholder="Search '+title+'" />' );
+				}
+				
+			});
+			
+			
+			$(".parkedsales thead input").on( 'keyup change', function () {
+				table
+					.column( $(this).parent().index()+':visible' )
+					.search( this.value )
+					.draw();
+			});
+		
+		
+			var table = $('.parkedsales').DataTable({
+				orderCellsTop: true
+			});
+			
+			function stopPropagation(event) {
+				if (event.stopPropagation !== undefined) {
+					event.stopPropagation();
+				} else {
+					event.cancelBubble = true;
+				}
+			}
+			
 		});
 	</script>
 </body>
