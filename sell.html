@@ -253,7 +253,13 @@
 					
 						<!-- categories -->
 						<div class="item-cats">
-							<strong class="item-cats-head">Product categories</strong>
+							<strong class="item-cats-head claerfix">
+								Product categories
+								<span class="pull-right">
+									<b class="cat_prev"><i class="fa fa-angle-left"></i></b>
+									<b class="cat_next"><i class="fa fa-angle-right"></i></b>
+								</span>
+							</strong>
 							
 							<!-- cats list -->
 							<ul class="item-cats-list owl-carousel">
@@ -551,7 +557,7 @@
 							</div>
 							
 							<div class="pay-actions">
-								<a href="javascript:void(0);" class="btn btn-default btn-lg cashPay">Cash</a>
+								<a href="javascript:void(0);" data-toggle="modal" data-target="#cashpay-md" class="btn btn-default btn-lg">Cash</a>
 								<a href="javascript:void(0);" class="btn btn-default btn-lg cardPay">Credit Card</a>
 							</div>
 						</div>
@@ -614,9 +620,26 @@
 			
 			<!-- popup body -->
 			<div class="popup-body">
+					
+				<!-- for UX -->
+				<div class="overlay"><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i></div>
 				
-				<!-- items carousel -->
-				<div class="carousel-card">
+				
+				<!-- nav tabs carousel -->
+				<div class="tabs-wrapper owl-carousel">
+					<a href="javascript:void(0);" data-tab="tab1" class="current">Riesling</a>
+					<a href="javascript:void(0);" data-tab="tab2">Syrah</a>
+					<a href="javascript:void(0);" data-tab="tab3">Merlot</a>
+					<a href="javascript:void(0);" data-tab="tab4">Cabernet</a>
+					<a href="javascript:void(0);" data-tab="tab5">Pinot</a>
+					<a href="javascript:void(0);" data-tab="tab6">Agrafe</a>
+					<a href="javascript:void(0);" data-tab="tab7">Anjou</a>
+					<a href="javascript:void(0);" data-tab="tab8">Assemblage</a>
+				</div>
+				
+			
+				<!-- items carousel or tab -->
+				<div class="carousel-card current" id="tab1">
 					
 					<!-- carousel header -->
 					<div class="carousel-header">
@@ -632,7 +655,7 @@
 					
 					
 					<!-- carousel body -->
-					<div class="carousel-body owl-carousel">
+					<div class="modal_caro carousel-body owl-carousel">
 						
 						<!-- item -->
 						<div class="item">
@@ -747,9 +770,150 @@
 					</div><!-- ./ carousel body -->
 					
 				</div><!-- ./ items carousel -->
+					
+					
+				<!-- items carousel or tab -->
+				<div class="carousel-card" id="tab2">
+					
+					<!-- carousel header -->
+					<div class="carousel-header">
+						<div class="carousel-name">
+							<span>Make Other Choices</span>
+						</div>
+						<div class="carousel-navigation">
+							<i class="prev">&lt;</i>
+							<i class="next">&gt;</i>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+					
+					<!-- carousel body -->
+					<div class="modal_caro carousel-body owl-carousel">
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/5.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Riesling</span>
+								<span class="item_price">+<i>$160.12</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/4.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Syrah</span>
+								<span class="item_price">+<i>$320</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/1.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Merlot</span>
+								<span class="item_price">+<i>$480</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/4.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Cabernet</span>
+								<span class="item_price">+<i>$215.5</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/5.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Pinot</span>
+								<span class="item_price">+<i>$246.5</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/6.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Agrafe</span>
+								<span class="item_price">+<i>$147</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/7.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Anjou</span>
+								<span class="item_price">+<i>$7895.15</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/8.jpg" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Assemblage</span>
+								<span class="item_price">+<i>$485.16</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/9.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Ausone</span>
+								<span class="item_price">+<i>$3800</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/10.ico" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Bacchus</span>
+								<span class="item_price">+<i>$170</i></span>
+							</div>
+						</div>
+						
+					</div><!-- ./ carousel body -->
+					
+				</div><!-- ./ items carousel -->
+				
+				<div class="carousel-card" id="tab3">PASTE A CAROUSEL BODY HERE</div>
+				<div class="carousel-card" id="tab4">DEF</div>
+				<div class="carousel-card" id="tab5">GHI</div>
+				<div class="carousel-card" id="tab6">JKL</div>
+				<div class="carousel-card" id="tab7">MGH</div>
+				<div class="carousel-card" id="tab8">OPU</div>
+					
 				
 			</div><!-- ./ popup body -->
-			
 		</div>
 	</div><!-- ./ multiple item selection popup -->
 	
@@ -779,8 +943,25 @@
 			<!-- popup body -->
 			<div class="popup-body">
 				
+				<!-- for UX -->
+				<div class="overlay"><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i></div>
+				
+				<!-- nav tabs carousel -->
+				<div class="tabs-wrapper owl-carousel">
+					<a href="javascript:void(0);" data-tab="tab11" class="current">Riesling</a>
+					<a href="javascript:void(0);" data-tab="tab22">Syrah</a>
+					<a href="javascript:void(0);" data-tab="tab33">Merlot</a>
+					<a href="javascript:void(0);" data-tab="tab44">Cabernet</a>
+					<a href="javascript:void(0);" data-tab="tab55">Pinot</a>
+					<a href="javascript:void(0);" data-tab="tab66">Agrafe</a>
+					<a href="javascript:void(0);" data-tab="tab77">Anjou</a>
+					<a href="javascript:void(0);" data-tab="tab88">Assemblage</a>
+				</div>
+				
+				
+				
 				<!-- items carousel -->
-				<div class="carousel-card">
+				<div class="carousel-card current" id="tab11">
 					
 					<!-- carousel header -->
 					<div class="carousel-header">
@@ -796,7 +977,7 @@
 					
 					
 					<!-- carousel body -->
-					<div class="carousel-body owl-carousel">
+					<div class="modal_caro carousel-body owl-carousel">
 						
 						<!-- item -->
 						<div class="item">
@@ -911,6 +1092,149 @@
 					</div><!-- ./ carousel body -->
 					
 				</div><!-- ./ items carousel -->
+				
+				
+				<!-- items carousel -->
+				<div class="carousel-card" id="tab22">
+					
+					<!-- carousel header -->
+					<div class="carousel-header">
+						<div class="carousel-name">
+							<span>Make Another Choice</span>
+						</div>
+						<div class="carousel-navigation">
+							<i class="prev">&lt;</i>
+							<i class="next">&gt;</i>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+					
+					<!-- carousel body -->
+					<div class="modal_caro carousel-body owl-carousel">
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/5.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Pizza</span>
+								<span class="item_price">+<i>$100</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/2.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Syrah</span>
+								<span class="item_price">+<i>$320</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/3.jpg" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Merlot</span>
+								<span class="item_price">+<i>$480</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/4.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Cabernet</span>
+								<span class="item_price">+<i>$215.5</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/5.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Pinot</span>
+								<span class="item_price">+<i>$246.5</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/6.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Agrafe</span>
+								<span class="item_price">+<i>$147</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/7.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Anjou</span>
+								<span class="item_price">+<i>$7895.15</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/8.jpg" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Assemblage</span>
+								<span class="item_price">+<i>$485.16</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/9.png" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Ausone</span>
+								<span class="item_price">+<i>$3800</i></span>
+							</div>
+						</div>
+						
+						<!-- item -->
+						<div class="item">
+							<div class="item-img">
+								<img src="images/popup_items/10.ico" alt="item_name">
+							</div>
+							<div class="item-info">
+								<span class="item_name">Bacchus</span>
+								<span class="item_price">+<i>$170</i></span>
+							</div>
+						</div>
+						
+					</div><!-- ./ carousel body -->
+					
+				</div><!-- ./ items carousel -->
+				
+				
+				<div class="carousel-card" id="tab33">PASTE A CAROUSEL BODY HERE</div>
+				<div class="carousel-card" id="tab44">DEF</div>
+				<div class="carousel-card" id="tab55">GHI</div>
+				<div class="carousel-card" id="tab66">JKL</div>
+				<div class="carousel-card" id="tab77">MGH</div>
+				<div class="carousel-card" id="tab88">OPU</div>
+				
 				
 			</div><!-- ./ popup body -->
 			
@@ -999,6 +1323,44 @@
 			</div>
 		</div>
 	</div><!-- ./ add customer -->
+
+	
+	
+
+	<!-- cash pay options modal -->
+	<div id="cashpay-md" class="modal fade mini-modal" role="dialog" tabindex='-1'>
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					
+					<!-- cash pay header -- with main total amount -->
+					<h4 class="modal-title">
+						Collect $17.00
+						<span>Quick cash payment</span>
+					</h4>
+					
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				
+				<div class="modal-body">
+					
+					<!-- pay buttons -->
+					<ul class="cash_pay_sets">
+						
+						<li class="button_set">
+							<button class="btn btn-success" data-dismiss="modal">$17.00</button>
+							<button class="btn btn-primary" data-dismiss="modal">$20.00</button>
+							<button class="btn btn-primary" data-dismiss="modal">$30.00</button>
+							<button class="btn btn-primary" data-dismiss="modal">$50.00</button>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div><!-- ./ cash pay options modal -->
 	
 	
 	<!-- scripts -->
@@ -1006,6 +1368,6 @@
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/dashboard.js"></script>
-	
+
 </body>
 </html>

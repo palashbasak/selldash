@@ -1088,6 +1088,11 @@ strong {
 	color: #fff;
 }
 
+.btn-primary {
+	background-color: #446A81;
+	outline: none;
+}
+
 .btn-lg {
     padding: 14px 16px;
     font-size: 20px;
@@ -1276,7 +1281,7 @@ form  label input {
 }
 
 .pay-screen .pay-options .order-complete .order_comp_header {
-	font-size: 50px;
+	font-size: 35px;
     font-weight: 100;
     text-align: center
 }
@@ -1291,7 +1296,7 @@ form  label input {
 }
 
 .pay-screen .pay-options .order-complete .comp_form {
-	max-width: 80%;
+	max-width: 100%;
 	margin: 0 auto 50px auto;
 }
 
@@ -1305,11 +1310,11 @@ form  label input {
     border-radius: 3px;
 	padding-left: 20px;
 	padding-right: 20px;
-	width: 70%;
+	width: 65%;
 }
 
 .pay-screen .pay-options .order-complete .comp_form  input.btn  {
-	width: 28%;
+	width: 33%;
     font-size: 14px;
 	margin-bottom: 0px;
 }
@@ -1472,6 +1477,50 @@ form  label input {
 }
 
 
+/* mini modals */
+.mini-modal .modal-title {
+	text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.mini-modal .modal-title span {
+    display: block;
+    font-size: 19px;
+    color: #b0b0b0;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.cash_pay_sets {
+	text-align: center;
+	margin: 0 auto 30px auto;
+}
+
+.cash_pay_sets .button_set .btn {
+	min-width: 100px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 2px;
+	border: none;	
+}
+
+.cash_pay_sets .button_set .btn:focus,
+.cash_pay_sets .button_set .btn:hover {
+	outline: none;
+	opacity: 0.8;
+}
+
+.mini-modal.modal.fade {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
 
 /* ================================
 	Popup
@@ -1594,6 +1643,24 @@ form  label input {
 	right: 0;
 	height: 1px;
 	background: #e8e6e6;
+}
+
+.popup-body .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99999;
+	background: #e8e6e6;
+	text-align: center;
+}
+
+.popup-body .overlay i {
+	color: #ff5c0e;
+	display: block;
+	text-align: center;
+	margin: 140px auto;
 }
 
 /* pop slidein animation 
@@ -1743,44 +1810,45 @@ form  label input {
 /* cats carousel  */
 .item-cats {
     margin-bottom: 37px;
-	margin-top: -30px;
+	margin-top: -40px;
 }
 
 .item-cats .item-cats-head {
-    font-size: 15px;
+    font-size: 18px;
     color: #4c4c4c;
     border-bottom: solid 1px #ebebeb;
     display: block;
     margin-bottom: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .item-cats .item-cats-list {
 	position: relative;
 }
 
-.item-cats .item-cats-list .owl-dots {
+.item-cats .item-cats-list .owl-dots,
+.item-cats .item-cats-list .owl-nav {
 	display: none;
 }
 
-.item-cats .item-cats-list .owl-prev,
-.item-cats .item-cats-list .owl-next {
+.item-cats .item-cats-head .cat_prev,
+.item-cats .item-cats-head .cat_next {
     display: inline-block;
-    width: 100px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
     text-align: center;
     background: #ff5c0e;
     color: #fff;
     margin-right: 7px;
     border-radius: 3px;
     text-transform: capitalize;
+    font-size: 20px;
+	cursor: pointer;
 }
 
-.item-cats .item-cats-list .owl-nav {
-    margin-top: 10px;	
-}
-
-.item-cats .item-cats-list .owl-prev:hover,
-.item-cats .item-cats-list .owl-next:hover {
+.item-cats .item-cats-head .cat_prev:hover,
+.item-cats .item-cats-head .cat_next:hover {
 	opacity: 0.7;
 }
 
@@ -1823,6 +1891,76 @@ form  label input {
 .item-cats .owl-carousel .owl-stage-outer {
     padding: 10px 0;	
 }
+
+.popup .carousel-card {
+	display: none;
+}
+
+.popup .carousel-card.current {
+	display: block;
+} 
+
+
+/* tabs */
+.tabs-wrapper {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 10px 35px;
+}
+
+.tabs-wrapper .owl-item {
+	text-align: center;
+    background: #4e4e4e;
+    border-radius: 4px;	
+}
+
+.tabs-wrapper .owl-item a {
+	color: #fff;
+    padding: 8px;
+    display: block;
+}
+
+.tabs-wrapper .owl-item:hover,
+.tabs-wrapper .owl-item:focus,
+.tabs-wrapper .owl-item a.current {
+	background-color: #ff5c0e;
+	border-radius: 4px;
+}
+
+.tabs-wrapper .owl-nav .owl-prev {
+    left: 0;
+	border-radius: 5px 0 0 5px;	
+}
+
+.tabs-wrapper .owl-nav .owl-next {
+	right: 0;
+	border-radius: 0 5px 5px 0;
+}
+
+.tabs-wrapper .owl-nav .owl-prev,
+.tabs-wrapper .owl-nav .owl-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #ff5c0e;
+    width: 30px;
+    text-align: center;
+    color: #fff;
+    line-height: 61px;
+    font-size: 30px;
+}
+
+.tabs-wrapper .owl-nav .owl-prev:hover,
+.tabs-wrapper .owl-nav .owl-next:hover {
+	opacity: 0.8;
+}
+
+
+.tabs-wrapper .owl-dots {
+	display: none !important;
+}
+
+
 
 
 /* ================================
@@ -1924,16 +2062,17 @@ form  label input {
 	.top_live_search {
 		margin-left: 20px;
 	}
+	
+	.item-cats .owl-carousel .owl-stage-outer,
+	.tabs-wrapper .owl-carousel .owl-stage-outer {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 1100px) {
 	.carousel-header,
 	.carousel-body {
 		padding: 15px 16px;
-	}
-	
-	.item-cats .item-cats-list .owl-nav {
-		display: block !important;
 	}
 }
 
@@ -2112,6 +2251,11 @@ form  label input {
 		width: 88%;
 	}
 	
+	.item-cats .owl-carousel .owl-stage-outer,
+	.tabs-wrapper .owl-carousel .owl-stage-outer {
+		width: 100%;
+	}
+	
 	.carousel-header .carousel-name span {
 	    font-size: 13px;	
 	}
@@ -2135,6 +2279,18 @@ form  label input {
 	
 	.prod-cates {
 		display: none;
+	}
+	
+	.pay-actions .btn {
+		display: block;
+		width: 100%;
+	}
+	
+	.cash_pay_sets .button_set .btn {
+		min-width: 145px;
+		height: 50px;
+		font-size: 19px;
+		margin-bottom: 9px;
 	}
 }
 
@@ -2170,9 +2326,8 @@ form  label input {
 		font-size: 12px;
 	}
 	
-	.pay-actions .btn {
-		display: block;
-		width: 100%;
+	.dashsection-header .pull-right {
+		float: none !important;
 	}
 }
 
@@ -2192,5 +2347,12 @@ form  label input {
 	.carousel-header, 
 	.carousel-body {
 		padding: 8px 16px;
+	}
+	
+	.dashsection-header a, 
+	.dashsection-header a.inactive:hover {
+		min-width: 125px;
+	    margin-left: 5px;
+		margin-right: 5px;		
 	}
 }
