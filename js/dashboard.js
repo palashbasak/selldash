@@ -369,7 +369,7 @@
 	
 
 	// select multiple items from carousel
-	$('.multiPop .carousel-body .item').on('click',function(){
+	$('.m_selec .carousel-body .item').on('click',function(){
 		var $this = $(this);
 		if($this.hasClass('selected')){
 			$this.removeClass('selected');
@@ -380,8 +380,8 @@
 
 
 	// select single items from carousel
-	$('.singlePop .carousel-body .item').on('click',function(){
-		$('.singlePop .carousel-body .item').removeClass('selected');
+	$('.s_selec .carousel-body .item').on('click',function(){
+		$('.s_selec .carousel-body .item').removeClass('selected');
 		$(this).addClass('selected');
 	});
 	
